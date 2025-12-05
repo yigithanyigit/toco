@@ -42,7 +42,7 @@ class DeviceProperties(NamedTuple):
                 multi_processor_count=1,
                 max_threads_per_block=1024,
                 warp_size=32,
-                compute_capability=(8, 0),
+                compute_capability=(10, 0),
             )
         
         props = torch.cuda.get_device_properties(device)
